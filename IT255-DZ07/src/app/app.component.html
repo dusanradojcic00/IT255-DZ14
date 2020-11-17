@@ -1,0 +1,15 @@
+<div class="container py-5">
+  <div>
+    <input [(ngModel)]="searchText" placeholder="Max room price" [ngModelOptions]="{standalone: true}">
+    <button class="button btn-large btn-primary" (click)="randomize()">RANDOMIZE</button>
+  </div>
+
+  <div class="row">
+    <app-room *ngFor="let room of rooms | filterPipe : searchText; index as i;" [room]="room"
+      (delete)="onDelete($event)" (edit)="onEdit($event)"></app-room>
+  </div>
+
+
+  <!-- <app-form-add (add)="addRoom($event)"></app-form-add> -->
+  <app-form-add-validate (add)="addRoom($event)"></app-form-add-validate>
+</div>

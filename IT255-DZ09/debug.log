@@ -1,0 +1,3 @@
+[1117/195600.496:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1117/221254.279:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\radoj\AppData\Local\Temp\karma-85985324\Crashpad\attachments\c6844ad3-404a-48b7-ab20-5ee7d915235e: The system cannot find the path specified. (0x3)
+[1117/222036.206:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\radoj\AppData\Local\Temp\karma-14538905\Crashpad\attachments\fe1c1a14-1c0a-41de-9b2f-e6ba2ce9fecc: The system cannot find the path specified. (0x3)

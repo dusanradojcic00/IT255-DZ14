@@ -1,0 +1,18 @@
+<div class="room-card">
+    <div class="room-content">
+        <img src="{{room.image}}">
+        <div class="room-desc">
+            <h2>{{room.name}}</h2>
+            <p>{{room.description}}</p>
+            <div>
+                <span>Score: {{room.score}} </span>
+                <span *ngIf="room.score >= 9" style="color: red; font-size: 1.5rem; margin-left: 10px;">   TOP PICK</span>
+            </div>
+            <h3>{{room.price}} EUR / night</h3>
+        </div>
+    </div>
+    <div class="room-btns pt-3">
+        <button class="btn btn-large btn-danger" (click)="onDelete()">DELETE</button>
+        <button class="btn btn-large btn-warning" (click)="onEdit()">CHANGE</button>
+    </div>
+</div>
